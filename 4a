@@ -1,0 +1,25 @@
+#include<iostream>
+#include<string>
+#include<algorithm>
+using namespace std;
+int main()
+{
+string str="vansh ";
+cout<<str<<endl;
+
+string ptr="jain";
+
+string result;
+result=str + ptr;
+cout<<" concatenated string is :"<<result;
+
+
+
+
+
+
+
+
+
+   return 0;
+} 
