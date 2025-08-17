@@ -1,0 +1,17 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+string str="vansh jain";
+cout<<str;
+cout<<endl;
+string ptr;
+for(int i=0;i<str.length();i++){
+    if(str[i]!='a'&&str[i]!='e'&& str[i]!='i' && str[i]!='o' && str[i]!='u')
+    ptr=ptr+str[i];
+}
+cout<<ptr;
+
+    return 0;
+}
