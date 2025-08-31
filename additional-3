@@ -1,0 +1,26 @@
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+//String Anagrams  
+//Given two strings str1 and str2, determine if they form an anagram pair.  
+//Note: Two strings are considered anagrams if one string can be rearranged to form the other 
+//string. 
+string str="vansh";
+string ptr="navhs";
+sort(str.begin(),str.end());
+sort(ptr.begin(),ptr.end());
+if(str==ptr){
+    cout<<"they are anagram";
+}
+else{
+    cout<<"not anagram";
+}
+
+
+
+
+
+    return 0;
+}
