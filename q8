@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int arr[10] = {2, 3, 7, 5, 9, 1, 2, 4, 10, 3};
+    int n = 0;
+
+    for(int i = 0; i < sizeof(arr)/sizeof(int); i++){
+        bool distinct = true;
+        for(int j = 0; j < i; j++){
+            if(arr[i] == arr[j]){
+                distinct = false;
+                break;
+            }
+        }
+        if(distinct == true){
+            n++;
+        }
+    }
+
+    cout << "total number of distinct elements are = " << n;
+}
